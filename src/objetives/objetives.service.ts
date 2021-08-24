@@ -15,9 +15,7 @@ export class ObjetivesService {
   }
 
   async create(createObjetiveDto: CreateObjetiveDto) {
-    return this.objetivesRepository.testProcedureCreate(createObjetiveDto.name);
-    // const objetive = this.objetivesRepository.create(createObjetiveDto);
-    // return this.objetivesRepository.save(objetive);
+    return this.objetivesRepository.createObjetive(createObjetiveDto.name);
   }
 
   async delete(id: number): Promise<void> {
@@ -27,7 +25,7 @@ export class ObjetivesService {
     }
   }
 
-  async testing() {
-    return this.objetivesRepository.testProcedure();
+  async getAllBySP() {
+    return this.objetivesRepository.getAll();
   }
 }

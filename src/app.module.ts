@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ObjetivesModule } from './objetives/objetives.module';
 
 @Module({
@@ -21,7 +19,7 @@ import { ObjetivesModule } from './objetives/objetives.module';
     }),
     ObjetivesModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}

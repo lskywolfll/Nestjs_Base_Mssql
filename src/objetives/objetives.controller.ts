@@ -14,7 +14,7 @@ export class ObjetivesController {
 
   @Get('/test')
   testing() {
-    return this.objetivesService.testing();
+    return this.objetivesService.getAllBySP();
   }
 
   @Post()
